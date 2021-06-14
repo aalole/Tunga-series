@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Task/Product landing page</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="./assets/p-logo.png" alt="App logo">
+        <nav id="nav-bar">
+            <ul>
+                <li><a  class="nav-link" href="#header-img">Home</a></li>
+                <li><a  class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>ABout Us</h1>
+        <section class="video" id="about">
+            <div class="video-description">
+                <h3>Welcome to KingsLanding, the Land of the demons in human Skin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nam obcaecati commodi illum recusandae id eligendi aliquam, 
+                     tempore officiis! Recusandae nesciunt quibusdam distinctio? Consequuntur 
+                    voluptates quae molestiae nemo rem eius dolores velit! Repudiandae, 
+                    quos saepe quisquam repellat, deserunt quidem id culpa dicta 
+                    vero minima laborum.
+                </p>
+                <p>
+                    porro animi eos minus deleniti optio praesentium est temporibus ea quod. 
+                    Eveniet similique aliquam qui ea quo modi in veniam, neque maxime, commodi 
+                    praesentium! Molestiae unde quibusdam eum sint odio, soluta facere aliquid 
+                    qui ad repellat quo incidunt quas beatae aperiam hic aut reiciendis labore sed iure. 
+                    Ea recusandae facilis ipsam quis unde doloremque hic ad dolores perferendis veniam ducimus, 
+                    aut animi laudantium ipsa soluta exercitationem, dolor eaque vel impedit nesciunt similique qui quisquam minus! Ut porro consequuntur dicta aut deleniti voluptatibus blanditiis cumque modi similique, nobis natus, mollitia voluptatum amet doloribus 
+                    tenetur voluptate tempora sint,
+                </p>
+            </div>
+            <div class="video-wrap">
+                <video id="video" controls>
+                    <source src="./assets/sample-video.mp4" type="video/mp4">
+                    sorry, your browser does not support the video format
+                </video>
+            </div>
+        </section>
+        <h2>Contact us</h2>
+        <section class="form">
+            <h3>Get notified when product is ready</h3>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; aalole 2021. All right reserved</small>
+    </footer>
+</body>
+</html>
