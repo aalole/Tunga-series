@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-height: 100vh;
+ 
+}
+.wrapper{
+    width: 700px;
+    margin: 0 auto;
+    background-color: #c4c4c4;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1, main h2, main h3{
+    text-align: center;
+    font-size: 1.2em;
+}
+.input, .submit{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+input, label, button{
+    width: 250px;
+    align-self: center;
+}
+button{
+    padding: 20px auto;
+}
+button:hover{
+    background-color: darkslategray;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-clear{
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #777;
+}
+.toggle{
+    text-decoration: line-through;
+    text-decoration-color: deepskyblue;
+}
+ul li{
+    list-style-type: none;
+}
+.done{
+    text-decoration-color: darkred;
+    text-decoration: line-through;
+}
