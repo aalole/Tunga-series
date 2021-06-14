@@ -1,0 +1,146 @@
+/* 
+    green: #c2e59c;
+    blue: #64b3f4
+    another green #00bf8f
+    black: #00223E
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aside header{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c2e59c;
+    text-shadow: 5px 3px #00bf8f;
+    padding: 20px 0;
+}
+#main-doc{
+    background-color: whitesmoke;
+    padding: 0 10px;
+}
+#main-doc h2{
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#00bf8f;
+}
+ul{
+    list-style-type: none;
+}
+nav a{
+    padding: 7px 10px;
+    transition: all 0.7s ease;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+    color: teal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+nav a:hover{
+    background-color: #00bf8f;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.doc-links{
+    display: none;
+}
+
+.main-section{
+    padding: 20px 0;
+}
+.main-section h3{
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.erin-img{
+    padding: 20px;
+}
+.intro-text1-img img{
+    display: block;
+    border: 1px solid #c2e59c;
+    border-radius: 5px;
+    max-width: 100%;
+}
+.intro-text1-img p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.main header{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.main-section{
+    padding: 0 20px;
+}
+.main-section ul li,
+.main-section p{
+    font-size: 17px;
+    line-height: 30px;
+}
+code{
+    padding: 20px;
+    color: darkgrey;
+}
+@media screen and (min-width:576px){
+    .main-section{
+        padding: 0 50px;
+    }
+    .doc-links{
+        display: block;
+    }
+    #main-doc,
+    .intro-text1-img{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #main-doc{
+        justify-content: space-between;
+    }
+    .erin-img{
+        width: 50%;
+    }
+    .erin-img img{
+        height: 350px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .intro-paras{
+        width: 50%;
+    }
+    .intro-text1-img p{
+        font-size: 17px;
+        line-height: 25px;
+        padding-right: 50px;
+    }
+    aside{
+        width: 25%;
+        align-self: flex-start;
+    }
+    .main{
+        width: 75%;
+    }
+}
+

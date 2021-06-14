@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="title"> This is a survey form</h1>
+        <p id="description"> Welcome to the survey platform. Please fill this form to take part in the survey</p>
+
+        <form action="" id="survey-form">
+            <fieldset>
+                <div class="field-wrap">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="field-wrap">
+                    <label for="email" id="email-label"> Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="field-wrap">
+                    <label for="number" id="number-label">Number</label>
+                    <input type="number" name="number" id="number" placeholder="Enter Number" required min="10" max="14">
+                </div>
+
+                <div class="field-wrap">
+                    <label for="options" id="option-select">Select your option</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="#">select an option</option>
+                        <option value="one">option one</option>
+                        <option value="two">option two</option>
+                        <option value="three">option three</option>
+                    </select>
+                </div>
+                <h5>Gender</h5>
+                <div class="radios field-wrap">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="checkboxes field-wrap">
+                    <label for="box1">box1</label>
+                    <input type="checkbox" name="box1" id="box1" value="box1">
+                    <label for="box2">box2</label>
+                    <input type="checkbox" name="box2" id="box2" value="box2">
+                    <label for="box3">box3</label>
+                    <input type="checkbox" name="box3" id="box3" value="box3">
+                    <label for="box4">box4</label>
+                    <input type="checkbox" name="box4" id="box4" value="box4">
+                </div>
+                <div class="field-wrap">
+                    <label for="comments">Additional comments</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Add your comment"></textarea>
+                </div>
+                
+                <button type="submit" id="submit"> Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

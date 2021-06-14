@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header{
+    padding: 10px;
+    background-color: rgb(0, 151, 245);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img{
+    width: 50px;
+    animation: rotate 3s ease;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#nav-bar ul{
+    list-style-type: none;
+}
+#nav-bar ul li{
+    display: inline-block;
+    margin: 0 7px;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+main{
+    padding-top: 90px;
+}
+main h1, main h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 14px 20px;
+    text-shadow: 5px 3px lightgray;
+}
+
+.video-description h3{
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 24px;
+}
+.video-description p{
+    font-style: oblique;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 22px;
+    line-break: loose;
+}
+.video, .form{
+    padding: 10px 20px;
+}
+.video{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#video{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form{
+    background: linear-gradient(rgba(0, 151, 245, 0.5), rgba(241, 23, 18, 0.5)), url('./bgimage2.jpg')center/cover no-repeat;
+    height: 300px;
+    padding-top: 20px;
+}
+.form h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-bottom: 14px;
+    color: white;
+    letter-spacing: 1.2px;
+}
+#form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form input{
+    display: block;
+}
+#email, #submit{
+    padding: 10px 0;
+    border-radius: 7px;
+    width: 80%;
+    margin: 0 auto;
+}
+#email::placeholder{
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+#submit{
+    padding: 7px;
+    margin-left: 10%;
+    width: 150px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(241, 23, 18);
+    border: none;
+    transition: all 1s ease-in-out
+}
+#submit:hover{
+    color: white;
+    background-color: rgb(241, 23, 18);
+    border: none;
+    transform: rotate(18deg);
+    cursor: pointer;
+}
+#email::placeholder{
+    color: rgb(241, 23, 18);
+}
+
+footer{
+    padding: 15px 0;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        padding-top: 90px;
+    }
+    main h1, main h2{
+        font-size: 26px;
+    }
+    .video{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .video-wrap{
+        width: 50%;
+        padding: 10px;
+    }
+    #video{
+        width: 100%;
+        height: 300px;
+    }
+    .video-description{
+        width: 50%;
+        padding: 10px;
+    }
+}

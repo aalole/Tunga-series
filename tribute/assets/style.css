@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: darkorange;
+    color: white;
+    padding: 20px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main h1, 
+#img-div,
+#tribute-info{
+    padding: 20px;
+    margin: auto;
+}
+
+#title{
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#img-caption{
+    padding-top: 10px;
+    text-align: center;
+}
+#img-caption,
+#tribute-info{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+}
+#tribute-info p{
+    padding-top: 10px;
+}
+#tribute-info a{
+    text-transform: capitalize;
+}
