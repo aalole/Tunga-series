@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List VanillaJs App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Welcome to your Todo</h1>
+        <main>
+            <h2>Kindly use this form to create or update your todo list</h2>
+            <form action="#">
+                <div class="input">
+                    <label for="todo">Enter your next todo</label>
+                    <input type="text" name="todo" placeholder="Enter todo" id="todo">
+                </div>
+                <div class="submit">
+                    <button id="btn">Submit</button>
+                </div>
+            </form>
+
+            <div class="todo-list">
+                <h2>Your Todo Lists</h2>
+                <ul></ul>
+            </div>
+        </main>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
